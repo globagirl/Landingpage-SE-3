@@ -1,0 +1,453 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Starz Electronics</title>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Custom Theme files -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<!-- Custom Theme files -->
+
+	<script src="https://unpkg.com/feather-icons"></script>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="application/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); }
+	</script>
+
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+	</script>
+	<!---- start-smoth-scrolling---->
+	<!----- webfonts ------>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic|Open+Sans:300italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+	<!----- webfonts ------>
+	<!----start-top-nav-script---->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154699866-1"></script>
+	<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-154699866-1');
+	</script>
+	<!-- Google Analytics -->
+
+	<script>
+        $(function() {
+            var pull 		= $('#pull');
+            menu 		= $('nav ul');
+            menuHeight	= menu.height();
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function(){
+                var w = $(window).width();
+                if(w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+	</script>
+	<!----//End-top-nav-script---->
+</head>
+<body>
+<div class="main-header">
+	<!----- start-header---->
+	<div id="home" class="header">
+		<div class="top-header">
+			<div class="container">
+				<div class="logo">
+					<img src="images/logo.png" alt="">
+				</div>
+				<!----start-top-nav---->
+				<nav class="top-nav">
+					<ul class="top-nav">
+						<li class="active"><a href="#home" class="scroll">Home </a></li>
+						<li><a href="#about" class="scroll">About</a></li>
+						<li><a href="#portfolio" class="scroll">Products</a></li>
+						<li><a href="#services" class="scroll">Services</a></li>
+						<li><a href="#advantages" class="scroll">Advantages</a></li>
+						<li><a href="#team" class="scroll">Clients</a></li>
+						<li><a href="#contact" class="scroll">Contact</a></li>
+					</ul>
+					<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
+				</nav>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!----- //End-header ---->
+	<!----start-slider-script---->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+        // You can also use "$(window).load(function() {"
+        $(function () {
+            // Slideshow 4
+            $("#slider4").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+
+        });
+	</script>
+
+	<!----//End-slider-script---->
+	<!-- Slideshow 4 -->
+	<div  id="top" class="callbacks_container">
+		<ul class="rslides" id="slider4">
+			<li>
+				<div class="tittle-head">
+					<h1>Customized cable assemblies</h1>
+					<p>Just for you. </p>
+					<div class="learn-button">
+						<a class="slide-btn scroll" href="#contact">Contact Now</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="tittle-head">
+					<h1>Competitive pricing</h1>
+					<p>Just for you. </p>
+					<div class="learn-button">
+						<a class="slide-btn scroll" href="#contact">Contact Now</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="tittle-head">
+					<h1>Your all in one solution</h1>
+					<p>20 years of experience.</p>
+					<div class="learn-button">
+						<a class="slide-btn scroll" href="#contact">Contact Now</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="clearfix"> </div>
+</div>
+<div id="about" class="about">
+	<div class="container">
+		<div class="about-head">
+			<h3>About</h3>
+			<span>
+				Starz Electronics is a Tunisian-American certified subcontractor that has been producing since 2001
+				customized electrical and electronic assembly solutions.
+				Starz can meet requirements for most industries including telecommunication, automotive, medical,
+				security and metal detection.
+			</span>
+		</div>
+	</div>
+</div>
+<!----- //End-about---->
+<div id="portfolio" class="potrfolio-content">
+	<div class="container">
+		<div class="port-head">
+			<h3>Products</h3>
+			<span>Our customized cable assemblies portfolio</span>
+			<p>
+				Starz Electronic offers solutions for the following types of cables
+			</p>
+		</div>
+		<div id="portfoliolist">
+			<div class="portfolio-grids">
+				<div class="portfolio-wrapper">
+					<div class="view second-effect">
+						<img src="images/p-1.png" />
+						<h6>Complex sub-assemblies</h6>
+						<!--<div class="mask">-->
+						<!--<a href="#" class="info">Fiber Optic</a>-->
+						<!--</div>-->
+					</div>
+				</div>
+			</div>
+			<div class="portfolio-grids">
+				<div class="portfolio-wrapper">
+					<div class="view second-effect">
+						<img src="images/p-2.png" />
+						<h6>Twisted pair cable</h6>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio-grids">
+				<div class="portfolio-wrapper">
+					<div class="view second-effect">
+						<img src="images/p-3.png" />
+						<h6>Fiber Optic</h6>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio-grids">
+				<div class="portfolio-wrapper">
+					<div class="view second-effect">
+						<img src="images/p-4.png" />
+						<h6>Coaxial & RF cables</h6>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio-grids">
+				<div class="portfolio-wrapper">
+					<div class="view second-effect">
+						<img src="images/p-5.png" />
+						<h6>Multi-connector cables </h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!---//End-portfolio----->
+<div class="portfolio">
+	<div class="container">
+		<div class="potrfolio-head">
+			<h2>
+				Achieve your electrical projects assemblies with excellence and within your most convenient terms.
+			</h2>
+			<a class="prt-btn scroll" href="#contact">Take on your next challenge! </a>
+		</div>
+	</div>
+</div>
+<!---//End-portfolio----->
+
+<div id="services" class="services">
+	<div class="container">
+		<div class="gallery-head text-center">
+			<h3>Services</h3>
+			<p>
+				We have the manufacturing capability to effectively meet the demands of your business in a dynamic marketplace.
+			</p>
+		</div>
+		<div class="row text-center feature form-inline">
+			<div class="col-lg-3 col-md-6 service_grid">
+				<h3>Design & Prototyping</h3>
+				<img src="images/serv-3.jpg" />
+				<p>
+					We help you turn your project ideas into a commercially viable product by bettering its functionalities
+					or creating a new product prototype from scratch.
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 service_grid">
+				<h3>Wire Harness</h3>
+				<img src="images/serv-2.jpg" />
+				<p>
+					We  can  provide  harnesses  using  all  types  of  cables  and  connectors.
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 service_grid">
+				<h3>Over-molding</h3>
+				<img src="images/serv-1.jpg" />
+				<p>
+					Our over-molding installation allows us to consistently deliver quality-over molded cables that
+					withstand abrasion, moisture, sterilization processes, and other harmful exposures.
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 service_grid">
+				<h3>Custom Labeling & packaging</h3>
+				<img src="images/serv-4.jpg" />
+				<p>
+					We take in consideration your unique product specification to provide you with the right container
+					shapes and labelling depending on your requirements.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="advantages" class="advantages">
+	<div class="container">
+		<div class="advantages-head">
+			<h2>
+				Your advantages
+			</h2>
+			<span>At a glance</span>
+			<div class="row text-center">
+				<div class="col-md-3">
+					<h3>Excellent quality</h3>
+					<p>
+						We are ISO 9001, UL listed and ETL certified manufacturer. Our objective is to always comply
+						with our customer’s requirements and to aim for better quality results that exceed their expectations.
+					</p>
+				</div>
+				<div class="col-md-3">
+					<h3>Time saving</h3>
+					<p>
+						Our main production plant is located in Bizerte, Tunisia, which is ideal for just in time stocking
+						and production to the entire European and the USA markets.  This plays a critical role in
+						improving your delivery time.
+					</p>
+				</div>
+				<div class="col-md-3">
+					<h3>Duties advantages</h3>
+					<p>
+						Our presence in North Africa can provide complementary production capacity with very attractive
+						advantages; duty-free access to the European market and very low duties to the USA.
+					</p>
+				</div>
+				<div class="col-md-3">
+					<h3>Experienced engineers</h3>
+					<p>
+						Our highly qualified engineers are committed to work with you every step of the project in order
+						to build a finished assembly support while adhering to your schedules and quality standards
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!---//End-services----->
+
+<!---//End-team----->
+<div class="contact">
+	<div class="container">
+		<div class="contact-head">
+			<h3>Still interested in our customized cables assemblies solution?</h3>
+			<a class="con-btn scroll" href="#contact">Contact Now! </a>
+		</div>
+	</div>
+</div>
+<div id="team" class="team">
+	<div class="container">
+		<div class="team-head">
+			<h3>Our Clients</h3>
+			<p>We are proud to work with some of the largest EMS organizations such as:</p>
+		</div>
+		<div class="row text-center teams">
+			<div class="col-md-3 team_grid">
+				<div class="view2 second-effect2">
+					<img src="images/cl-1.jpg" />
+				</div>
+			</div>
+			<div class="col-md-3 team_grid">
+				<div class="view2 second-effect2">
+					<img src="images/cl-2.jpg" />
+				</div>
+			</div>
+			<div class="col-md-3 team_grid">
+				<div class="view2 second-effect2">
+					<img src="images/cl-3.jpg" />
+				</div>
+			</div>
+			<div class="col-md-3 team_grid">
+				<div class="view2 second-effect2">
+					<img src="images/cl-4.jpg" />
+				</div>
+			</div>
+			<div class="col-md-3 team_grid">
+				<div class="view2 second-effect2">
+					<img src="images/cl-5.jpg" />
+				</div>
+			</div>
+			<div class="col-md-3 team_grid">
+				<div class="view2 second-effect2">
+					<img src="images/cl-6.jpg" />
+				</div>
+			</div>
+			<div class="col-md-3 team_grid">
+				<div class="view2 second-effect2">
+					<img src="images/cl-7.jpg" />
+				</div>
+			</div>
+			<div class="col-md-3 team_grid">
+				<div class="view2 second-effect2">
+					<img src="images/cl-8.jpg" />
+				</div>
+			</div>
+			<div class="col-md-3 team_grid">
+				<div class="view2 second-effect2">
+					<img src="images/cl-9.jpg" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="contact" class="feedback">
+	<div class="container">
+		<div class="feed-head">
+			<h3>Contact </h3>
+			<p>
+				Get in touch with one of our experts to learn how we can help you take on your next challenge within your most convenient terms.
+			</p>
+		</div>
+		<div class="feed-contact">
+			<div class="col-md-8 contact-form">
+				<form action="send_email.php" name="ContactForm" method="post">
+					<input type="text" class="textbox" placeholder="Name" name="name" required>
+					<input type="text" class="textbox" placeholder="Business Name" name="Bname" required>
+					<input type="text" class="textbox" placeholder="E-mail" name="email" required>
+					<textarea placeholder="Message" name="message" required></textarea>
+					<input type="text" id="website" name="website" hidden/>
+					<input type="submit" name="submit" value="Get in touch !" >
+
+				</form>
+			</div>
+			<div class="col-md-4 address">
+				<h4>Our company </h4>
+				<p>03 Rue Hedi Chaker,</p>
+				<p>7000 Bizerte,Tunisia.</p><br>
+				<p>TN: <a href="tel:+21672444730">+216 72 444 730</a></p>
+				<p>USA: <a href="tel:+18723027403">+1 872 302 7403</a></p>
+				<p><a href="mailto:contact@starzelectronics.com">contact@starzelectronics.com</a></p>
+				<div class="social-icons">
+					<a href="https://www.facebook.com/Starz-electronics-766356963697248/"><i data-feather="facebook"></i></a>
+					<a href="https://twitter.com/STARZELECTRONI1"><i data-feather="twitter"></i></a>
+					<a href="https://www.instagram.com/starzelectronics/"><i data-feather="instagram"></i></a>
+					<a href="https://www.linkedin.com/company/starz-electronics/"><i data-feather="linkedin"></i></a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="logo2">
+				<img src="images/logo.png" alt="Starz Electronics logo">
+			</div>
+			<div class="copy-right">
+				<p>&copy; 2014  All rights  Reserved</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<script>
+        feather.replace()
+	</script>
+	<script type="text/javascript">
+        $(document).ready(function() {
+            /*
+            var defaults = {
+                  containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+             };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</body>
+</html>
